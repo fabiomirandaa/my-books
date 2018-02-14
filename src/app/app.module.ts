@@ -6,6 +6,8 @@ import { ROUTES } from './app.router';
 
 
 import { HomeComponent } from './home/home.component';
+import { CardComponent } from './card/card.component';
+
 @NgModule({
   imports: [
     BrowserModule,
