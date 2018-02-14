@@ -1,4 +1,40 @@
-<main>
-  <h1>Hello from Angular <strong>4</strong> App with Webpack</h1>
-  <img src="../assets/images/angular.png">
-</main>
+<nav class="navbar is-danger">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="">
+      My Books
+    </a>
+    <div class="navbar-burger burger" data-target="navMenubd-example">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navMenubd-example" class="navbar-menu">
+    <div class="navbar-start">
+
+      <a class="navbar-item">
+        Livros lidos
+      </a>
+
+      <a class="navbar-item" href="">
+        Todos meus livros
+      </a>
+    </div>
+
+  </div>
+</nav>
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Aplicação Web para o gerenciamento de Livros.
+      </h1>
+      <h2 class="subtitle">
+        Gerencie todos seus livros lidos e os que estão na lista para leitura.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<router-outlet></router-outlet>
