@@ -1,0 +1,1 @@
+Projeto criado para estudar e consolidar conhecimentos de Angular
