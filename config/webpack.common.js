@@ -32,6 +32,11 @@ module.exports = {
         use: 'file-loader?name=public/[name].[hash].[ext]'
       },
       {
+        test: /\.(sass|scss)$/,
+        // include: helpers.root('src'),
+        use: ['to-string-loader', 'style-loader', 'css-loader', 'sass-loader']
+      },
+      {
         test: /\.css$/,
         exclude: helpers.root('src', 'app'),
         use: ExtractTextPlugin.extract({
@@ -44,11 +49,6 @@ module.exports = {
         include: helpers.root('src', 'app'),
         use: ['to-string-loader', 'css-loader']
       },
-      {
-        test: /\.(sass|scss)$/,
-        include: helpers.root('src'),
-        use: ['to-string-loader', 'style-loader', 'css-loader', 'sass-loader']
-      }
     ]
   },
 
